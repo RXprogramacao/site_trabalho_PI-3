@@ -1,0 +1,153 @@
+/* Cabeçalho */
+header {
+    background-color: #d4a373;
+    display: flex;
+    justify-content: space-between; /* Ajusta para que a logo e os botões fiquem distantes */
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+body {
+    background-color: #2b3647; /* Alteração para a cor de fundo */
+    color: white; /* Alteração para a cor dos textos */
+}
+
+section {
+    display: none;
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px;
+}
+
+section.active {
+    display: block;
+}
+
+/* Estilo para as listas */
+section ul {
+    list-style-position: inside; /* Coloca os marcadores dentro do bloco */
+    margin: 0 auto; /* Centraliza a lista */
+    padding: 0;
+    width: 80%; /* Limita a largura da lista */
+}
+
+section ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+/* Para os cabeçalhos, como h1, h2, h3 */
+section h1, section h2, section h3 {
+    text-align: center; /* Alinha o texto dos cabeçalhos ao centro */
+    margin-bottom: 20px;
+    color: white; /* Garante que os títulos também fiquem em branco */
+}
+
+/* Para o formulário dentro da seção de Atendimento */
+.form-container {
+    text-align: left; /* Alinha o texto à esquerda para os campos do formulário */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 10px;
+    color: white; /* Cor dos textos no formulário */
+}
+
+.form-container input, .form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #000; /* Cor do texto dentro dos campos */
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Logo da empresa */
+header img.logo {
+    width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto; /* Mantém a proporção da logo */
+    transition: filter 0.3s ease; /* Animação de transição para a mudança de cor */
+    border: 2px solid #808080; /* Borda cinza ao redor da logo */
+    border-radius: 8px; /* Borda arredondada (opcional) */
+    padding: 5px; /* Espaçamento entre a borda e a imagem */
+    background-color: #2b3647; /* Cor de fundo atrás da logo */
+}
+
+/* Animação de mudança de cor da logo */
+header:hover img.logo {
+    filter: invert(40%) sepia(100%) saturate(150%) hue-rotate(180deg);
+}
+
+/* Estilo genérico para os botões */
+.icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon button img {
+    width: 24px;
+    height: 24px;
+}
+
+.icon button span {
+    font-size: 14px;
+    color: white; /* Alterado para branco */
+    text-align: center;
+    display: block;
+}
+
+/* Animação nos botões ao passar o mouse */
+.icon button:hover {
+    transform: scale(1.1);
+    color: #d4a373;
+}
+
+/* Seções */
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Estilos para o conteúdo */
+.content, .profiles {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+/* Personalização dos elementos de perfil */
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
